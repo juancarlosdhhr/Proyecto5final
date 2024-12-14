@@ -3,6 +3,7 @@ import './Novedades.css';
 
 const template = () => `
   <section class="novedades">
+  
     <h2>Novedades</h2>
     <div class="novedades-container">
       <div class="novedad-card">

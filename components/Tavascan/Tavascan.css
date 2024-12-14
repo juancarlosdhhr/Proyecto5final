@@ -1,0 +1,27 @@
+.tavascan {
+    background-color: #222;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .tavascan h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .tavascan-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .tavascan p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 15px 0;
+  }
+  

@@ -2,9 +2,9 @@ import './KingsLeague.css';
 
 const template = () => `
   <section class="kings-league">
-    <h2>CUPRA en la Kings League</h2>
+    <h2>CUPRA EN LA KINGS LEAGUE</h2>
     <div class="kings-league-content">
-      <img src="path_to_kingsleague_image.jpg" alt="CUPRA en la Kings League" class="kings-league-image" />
+      <img src="https://www.novedadesmotor.com/images/showid2/5858247?w=1200&zc=4" alt="CUPRA en la Kings League" class="kings-league-image" />
       <div class="kings-league-text">
         <p>CUPRA, patrocinador de la Kings League Infojobs...</p>
         <p>Arranca el tercer Split de la Kings League...</p>

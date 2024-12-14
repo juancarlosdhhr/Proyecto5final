@@ -13,6 +13,7 @@
   padding: 3rem 0;
   text-align: center;
   width: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), #333; /* Gradiente difuminado */
 }
 
 .novedades h2 {
@@ -27,21 +28,27 @@
   justify-content: center;
   gap: 2rem;
   
+
+  
 }
 
 .novedad-card {
   background-color: #333; /* Fondo de cada tarjeta */
   border-radius: 10px;
   overflow: hidden;
-  width: 300px;
-  transition: transform 0.3s ease;
+  
+  width: 350px;
+  transition: transform 0.4s ease;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), #333; /* Gradiente difuminado */
 }
 
 .novedad-card img {
   width: 100%;
-  height: 200px;
+  height: 300px;
   object-fit: cover;
   transition: transform 0.3s ease;
+  background: linear-gradient(to top, rgb(29, 29, 29), rgba(0, 0, 0, 1)), #333; /* Gradiente difuminado */
+
 }
 
 .novedad-card h3 {
@@ -59,7 +66,16 @@
   transform: scale(1.1); /* Expande la imagen al pasar el ratón */
 }
 
-
+.novedades .gradient-hero {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%; /* Ajusta el porcentaje para decidir la altura del difuminado */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); /* Difuminado desde arriba */
+  pointer-events: none;
+}
 
 /* Responsividad */
 @media (max-width: 768px) {
