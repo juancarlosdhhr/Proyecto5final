@@ -1,0 +1,29 @@
+/* Novedades Component */
+.novedades {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    padding: 60px 0;
+    background-color: #f5f5f5;
+  }
+  
+  .novedades .item {
+    width: 30%;
+    text-align: center;
+  }
+  
+  .novedades .item img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .novedades .item h3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+  }
+  
+  .novedades .item p {
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
