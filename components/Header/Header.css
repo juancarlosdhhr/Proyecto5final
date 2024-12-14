@@ -1,49 +1,88 @@
 
 
 
-*{
-  margin:0;
+/* Reinicio de estilos */
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-header {
+/* Header principal */
+.header {
   background-color: black;
+  width: 100%;
+  height: 10vh; /* Altura proporcional al tamaño de la pantalla */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2vw; /* Margen lateral relativo */
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+/* Contenedor dentro del header */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
-header section {
+/* Logo */
+.logo {
+  max-height: 8vh; /* Altura máxima proporcional al header */
+  max-width: 15vw; /* Ancho máximo proporcional */
+  object-fit: contain; /* Mantener proporción del logo */
+}
+
+/* Botonera */
+.nav-buttons {
   display: flex;
-  flex-direction:row;
-  justify-content: space-around;
+  gap: 2vw; 
   align-items: center;
 }
 
-header > section > div > img {
-  width: 15%
-}
-
-header  section  div  nav.nav-buttons {
-  display: flex; 
-  gap: 20px; 
-  align-items: center; 
-}
-
-header section div .nav-button {
+/* Botones */
+.nav-button {
   background: none;
   border: none;
   color: white;
   font-weight: bold;
-  text-transform: uppercase; 
-  font-size: 1rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  padding: 10px 20px;
+  padding: 0.5em 1em; 
 }
 
-
-header  section  div  .nav-button:hover {
-  background-color: #f38d36;
-  color: black; 
+.nav-button:hover {
+  background-color: #763C28;
+  color: black;
   border-radius: 5px;
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .header {
+    height: 12vh;
+    padding: 0 1vw;
+  }
+
+  .logo {
+    max-height: 7vh;
+    max-width: 20vw;
+  }
+
+  .nav-buttons {
+    gap: 1vw;
+    
+  }
+
+  .nav-button {
+    font-size: 0.9rem;
+    padding: 0.4em 0.8em;
+    font-size: 0.6rem; 
+  }
 }
