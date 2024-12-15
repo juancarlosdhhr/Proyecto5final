@@ -1,6 +1,6 @@
-/* *{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: url('public/cuprapointer (3).png') 16 16, auto; /* Coordenadas ajustadas */
 }
- */

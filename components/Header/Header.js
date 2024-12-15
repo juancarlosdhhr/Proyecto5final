@@ -23,7 +23,15 @@ const template = () => `
 `;
 
 const Header = () => {
+  // Renderizamos el header
   document.querySelector('header').innerHTML = template();
+
+  // Agregamos el evento al logo para recargar la página
+  const logo = document.querySelector('.logo');
+  logo.addEventListener('click', (event) => {
+    event.preventDefault(); // Evita cualquier comportamiento predeterminado
+    location.reload(); // Recarga la página
+  });
 };
 
 export default Header;

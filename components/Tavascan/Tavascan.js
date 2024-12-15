@@ -2,9 +2,10 @@ import './Tavascan.css';
 
 const template = () => `
   <section class="tavascan">
-    <h2>CUPRA Tavascán</h2>
-    <p>Nuestro primer SUV coupé eléctrico...</p>
+    <h2>CUPRA Tavascan</h2>
+    <p>Detalles sobre el CUPRA Tavascan...</p>
     <a href="#Novedades">Volver a Novedades</a> <!-- Enlace para regresar -->
+     <a href="#Tavascan">Ver más sobre CUPRA Tavascan</a>
   </section>
 `;
 

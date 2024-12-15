@@ -35,6 +35,7 @@
   max-height: 8vh; /* Altura máxima proporcional al header */
   max-width: 15vw; /* Ancho máximo proporcional */
   object-fit: contain; /* Mantener proporción del logo */
+  cursor:pointer;
 }
 
 /* Botonera */
@@ -58,7 +59,7 @@
 }
 
 .nav-button:hover {
-  background-color: #763C28;
+  background-color: #a5603f;
   color: black;
   
 }
