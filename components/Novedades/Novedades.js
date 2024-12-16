@@ -1,6 +1,12 @@
 
 import './Novedades.css';
 
+import Formentor from '../Formentor/Formentor';
+import Tavascan from '../Tavascan/Tavascan';
+import Terramar from '../Terramar/Terramar';
+import Leon from '../Leon/Leon';
+import Born from '../Born/Born';
+
 const template = () => `
   <section class="novedades">
     <h2>NOVEDADES</h2>

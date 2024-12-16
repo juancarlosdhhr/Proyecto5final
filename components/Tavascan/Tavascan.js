@@ -1,4 +1,5 @@
 import './Tavascan.css';
+import Novedades from '../Novedades/Novedades';
 
 const template = () => `
   <section class="tavascan">

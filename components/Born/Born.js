@@ -1,4 +1,5 @@
 import './Born.css';
+import Novedades from '../Novedades/Novedades';
 
 const template = () => `
   <section class="born">

@@ -1,4 +1,5 @@
 import './Leon.css';
+import Novedades from '../Novedades/Novedades';
 
 const template = () => `
   <section class="leon">
