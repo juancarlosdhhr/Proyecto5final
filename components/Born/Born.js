@@ -14,3 +14,9 @@ const Born = () => {
 };
 
 export default Born;
+
+
+
+
+
+
