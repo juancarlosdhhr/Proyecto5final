@@ -12,13 +12,13 @@ const template = () => `
       <h1>NUEVO CUPRA FORMENTOR POR 31.900€¹</h1>
       <p>Lo que tú sientes se llama obsesión</p>
       <p class="small-text">*Sujeto a financiación.</p>
-      <a href="#" class="button">Ver oferta</a>
+      <a href="#Novedades" class="button">Ver oferta</a>
     </div>
   </section>
 `;
 
 const Hero = () => {
-  document.querySelector('.hero-container').innerHTML = template();
+  document.getElementById('app').innerHTML += template();
 };
 
 export default Hero;

@@ -30,7 +30,7 @@ const template = () => `
 `;
 
 const Slider = () => {
-  document.querySelector('.slider-container').innerHTML = template();
+  document.getElementById('app').innerHTML += template();
 };
 
 export default Slider;

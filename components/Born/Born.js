@@ -1,22 +1,19 @@
 import './Born.css';
-import Novedades from '../Novedades/Novedades';
+
 
 const template = () => `
   <section class="born">
     <h2>CUPRA Born</h2>
-    <p>Detalles sobre el CUPRA Born...</p>
-    <a href="#Novedades">Volver a Novedades</a> <!-- Enlace para regresar -->
-     <a href="#Born">Ver más sobre CUPRA Born</a>
+    <p>Un SUV híbrido sumamente emocional y electrificado.</p>
+    <a href="#Novedades">Volver a Novedades</a>
   </section>
 `;
 
 const Born = () => {
-  document.querySelector('.content-container').innerHTML = template();
+  document.getElementById('app').innerHTML = template();
 };
 
 export default Born;
-
-
 
 
 

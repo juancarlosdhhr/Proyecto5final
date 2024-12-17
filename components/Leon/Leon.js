@@ -1,17 +1,16 @@
 import './Leon.css';
-import Novedades from '../Novedades/Novedades';
+
 
 const template = () => `
   <section class="leon">
     <h2>CUPRA León</h2>
-    <p>Detalles sobre el CUPRA León...</p>
-    <a href="#Novedades">Volver a Novedades</a> <!-- Enlace para regresar -->
-     <a href="#Leon">Ver más sobre CUPRA León</a>
+    <p>Un SUV híbrido sumamente emocional y electrificado.</p>
+    <a href="#Novedades">Volver a Novedades</a>
   </section>
 `;
 
 const Leon = () => {
-  document.querySelector('.content-container').innerHTML = template();
+  document.getElementById('app').innerHTML = template();
 };
 
 export default Leon;

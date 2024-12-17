@@ -2,88 +2,52 @@ import './style.css';
 
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import KingsLeague from './components/KingsLeague/KingsLeague';
-import Novedades from './components/Novedades/Novedades';
-import Slider from './components/Slider/Slider';
 import Hero from './components/Hero/Hero';
+import KingsLeague from './components/KingsLeague/KingsLeague';
+import Slider from './components/Slider/Slider';
+import Novedades from './components/Novedades/Novedades';
+import Formentor from './components/Formentor/Formentor';
 import Terramar from './components/Terramar/Terramar';
 import Tavascan from './components/Tavascan/Tavascan';
 import Leon from './components/Leon/Leon';
-import Formentor from './components/Formentor/Formentor';
 import Born from './components/Born/Born';
 
-// Función para renderizar el contenido según el hash
-const render = () => {
-  const container = document.querySelector('#app'); // Contenedor principal de la app
-  const hash = window.location.hash || '#Novedades'; // Ruta predeterminada si no hay hash
-  let component;
-
-  // Seleccionamos qué componente cargar según el hash
-  switch (hash) {
-    case '#Formentor':
-      component = Formentor;
-      break;
-    case '#Terramar':
-      component = Terramar;
-      break;
-    case '#Tavascan':
-      component = Tavascan;
-      break;
-    case '#Leon':
-      component = Leon;
-      break;
-    case '#Born':
-      component = Born;
-      break;
-    default:
-      component = Novedades; // Página por defecto
-  }
-
-  container.innerHTML = ''; // Limpiar el contenedor
-  component(); // Llamar al componente correspondiente
+const routes = {
+  '#Novedades': Novedades,
+  '#Formentor': Formentor,
+  '#Terramar': Terramar,
+  '#Tavascan': Tavascan,
+  '#Leon': Leon,
+  '#Born': Born,
 };
 
-// Función para construir el sitio web
-const buildWebsite = () => {
-  // Llamamos a las funciones que inyectan los diferentes componentes
-  Header();
-  Slider();
+const renderStaticComponents = () => {
   Hero();
-  Footer();
+  Novedades(); // Renderiza Novedades justo después del Hero
   KingsLeague();
-  Novedades();
-
-  // Añadimos los listeners para cambiar el hash cuando se hace click en los botones
-  document.querySelector("#btnFormentor").addEventListener("click", () => {
-    window.location.hash = '#Formentor'; // Cambiar el hash para Formentor
-  });
-  document.querySelector("#btnTerramar").addEventListener("click", () => {
-    window.location.hash = '#Terramar'; // Cambiar el hash para Terramar
-  });
-  document.querySelector("#btnTavascan").addEventListener("click", () => {
-    window.location.hash = '#Tavascan'; // Cambiar el hash para Tavascan
-  });
-  document.querySelector("#btnLeón").addEventListener("click", () => {
-    window.location.hash = '#Leon'; // Cambiar el hash para León
-  });
-  document.querySelector("#btnBorn").addEventListener("click", () => {
-    window.location.hash = '#Born'; // Cambiar el hash para Born
-  });
+  Slider();
 };
 
-// Ejecutamos la función App para cargar todo en la página
-document.addEventListener('DOMContentLoaded', () => {
-  buildWebsite();
-  render(); // Renderizamos la página según el hash inicial
-});
+const render = () => {
+  const app = document.getElementById('app');
+  app.innerHTML = ''; // Limpia el contenedor principal
 
-// Escuchar el cambio de hash para renderizar el contenido correctamente
-window.addEventListener('hashchange', render);
+  renderStaticComponents(); // Renderiza componentes fijos
 
+  const hash = window.location.hash || '#Novedades';
+  const component = routes[hash];
 
+  if (component && hash !== '#Novedades') {
+    app.innerHTML = ''; // Limpia solo si estamos cambiando de sección
+    component();
+  }
+};
 
+const init = () => {
+  Header();
+  Footer();
+  render(); // Renderiza todo el contenido inicial
+  window.addEventListener('hashchange', render); // Detecta cambios de hash
+};
 
-
-
-
-
+document.addEventListener('DOMContentLoaded', init);

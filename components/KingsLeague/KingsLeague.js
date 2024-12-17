@@ -15,7 +15,7 @@ const template = () => `
 `;
 
 const KingsLeague = () => {
-  document.querySelector('.kings-league-container').innerHTML = template();
+  document.getElementById('app').innerHTML += template();
 };
 
 export default KingsLeague;
