@@ -9,7 +9,7 @@ const Vortex = () => {
 
   app.innerHTML = `
     <section class="vortex-details">
-      <h1 class="car-title">Mercedes Vortex</h1>
+      
       <img src="../../assets/Vortexportada.jpg" alt="Mercedes Vortex" class="car-image"/>
       <p class="car-description">
         El Mercedes Vortex redefine el concepto de coche deportivo eléctrico. Con líneas agresivas y 

@@ -9,7 +9,7 @@ const Solaris = () => {
 
   app.innerHTML = `
     <section class="solaris-details">
-      <h1 class="car-title">Mercedes Solaris</h1>
+      
       <img src="../../assets/portadamercedesSolaris.jpg" alt="Mercedes Solaris" class="car-image"/>
       <p class="car-description">
         El Mercedes Solaris fusiona la elegancia con tecnología de vanguardia. Un diseño futurista 
