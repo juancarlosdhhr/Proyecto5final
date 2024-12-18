@@ -6,7 +6,7 @@ const Hero = () => {
   heroContainer.innerHTML = `
     <section class="hero">
       <video autoplay loop muted controls>
-        <source src="./Mercedes-Benz VISION AVTR.mp4" type="video/mp4">
+        <source src="../../assets/Mercedes-Benz VISION AVTR.mp4" type="video/mp4">
         Tu navegador no soporta el video.
       </video>
       <div class="gradient-overlay"></div>
