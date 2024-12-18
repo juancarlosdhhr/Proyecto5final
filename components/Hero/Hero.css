@@ -27,6 +27,7 @@
 
 .hero .content {
   position: absolute;
+  text-align: center;
   top: 45%;
   left: 4%;
   transform: translateY(-50%);
