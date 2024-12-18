@@ -10,7 +10,7 @@ const Vortex = () => {
   app.innerHTML = `
     <section class="vortex-details">
       <h1 class="car-title">Mercedes Vortex</h1>
-      <img src="public/Vortexportada.jpg" alt="Mercedes Vortex" class="car-image"/>
+      <img src="../../assets/Vortexportada.jpg" alt="Mercedes Vortex" class="car-image"/>
       <p class="car-description">
         El Mercedes Vortex redefine el concepto de coche deportivo eléctrico. Con líneas agresivas y 
         tecnología avanzada, ofrece una experiencia de conducción inigualable.
@@ -25,7 +25,7 @@ const Vortex = () => {
       </p>
       
       <div class="additional-section">
-        <img src="public/ruedasVortex.jpg" alt="Ruedas Mercedes Vortex" class="car-subimage"/>
+        <img src="../../assets/ruedasVortex.jpg" alt="Ruedas Mercedes Vortex" class="car-subimage"/>
         <p class="car-subdescription">
           Las ruedas del Mercedes Vortex cuentan con un diseño revolucionario de múltiples radios. No solo mejoran
           la aerodinámica, sino que también integran sistemas de refrigeración activa para el máximo rendimiento.
@@ -33,7 +33,7 @@ const Vortex = () => {
       </div>
 
       <div class="additional-section">
-        <img src="public/interiorVortex.jpg" alt="Interior Mercedes Vortex" class="car-subimage"/>
+        <img src="../../assets/interiorVortex.jpg" alt="Interior Mercedes Vortex" class="car-subimage"/>
         <p class="car-subdescription">
           El interior del Vortex es una obra maestra tecnológica. Con una pantalla panorámica que abarca todo el salpicadero
           y sistemas de inteligencia artificial, ofrece un control intuitivo y una experiencia futurista al volante.

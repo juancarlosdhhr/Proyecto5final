@@ -10,7 +10,7 @@ const Solaris = () => {
   app.innerHTML = `
     <section class="solaris-details">
       <h1 class="car-title">Mercedes Solaris</h1>
-      <img src="public/portadamercedesSolaris.jpg" alt="Mercedes Solaris" class="car-image"/>
+      <img src="../../assets/portadamercedesSolaris.jpg" alt="Mercedes Solaris" class="car-image"/>
       <p class="car-description">
         El Mercedes Solaris fusiona la elegancia con tecnología de vanguardia. Un diseño futurista 
         combinado con energía sostenible lo convierten en un coche revolucionario.
@@ -25,7 +25,7 @@ const Solaris = () => {
       </p>
       
       <div class="additional-section">
-        <img src="public/puertasmercedesSolaris.jpg" alt="Puertas Mercedes Solaris" class="car-subimage"/>
+        <img src="../../assets/puertasmercedesSolaris.jpg" alt="Puertas Mercedes Solaris" class="car-subimage"/>
         <p class="car-subdescription">
           Las puertas del Mercedes Solaris son un verdadero espectáculo visual. Su apertura vertical tipo 
           "alas de gaviota" facilita el acceso al interior, además de ofrecer un diseño icónico y exclusivo.
@@ -33,7 +33,7 @@ const Solaris = () => {
       </div>
 
       <div class="additional-section">
-        <img src="public/diseñomercedesSolaris.jpg" alt="Diseño aerodinámico Solaris" class="car-subimage"/>
+        <img src="../../assets/diseñomercedesSolaris.jpg" alt="Diseño aerodinámico Solaris" class="car-subimage"/>
         <p class="car-subdescription">
           El diseño aerodinámico del Solaris está optimizado para reducir la resistencia al aire, permitiendo
           una mayor eficiencia y estabilidad en carretera. Cada línea y curva está pensada para maximizar el rendimiento.

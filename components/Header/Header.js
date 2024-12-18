@@ -6,7 +6,7 @@ const template = () => `
   <header class="header">
     <div class="header-content">
       <img 
-        src="public/mercedeslogo.jpg" 
+        src="../../assets/mercedeslogo.jpg" 
         alt="Cupra Logo" 
         class="logo" 
       />
