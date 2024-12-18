@@ -5,8 +5,8 @@ const Hero = () => {
   const heroContainer = document.getElementById('hero-container');
   heroContainer.innerHTML = `
     <section class="hero">
-      <video autoplay loop muted controls>
-        <source src="../../assets/Mercedes-Benz VISION AVTR.mp4" type="video/mp4">
+      <video autoplay loop muted playsinline id="hero-video">
+        <source src="public/Mercedes-Benz_VISION_AVTR.mp4" type="video/mp4" />
         Tu navegador no soporta el video.
       </video>
       <div class="gradient-overlay"></div>

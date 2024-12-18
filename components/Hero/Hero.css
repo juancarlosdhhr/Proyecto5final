@@ -1,3 +1,4 @@
+/* Hero general */
 .hero {
   position: relative;
   height: calc(70vh - 60px);
@@ -6,6 +7,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Video */
 .hero video {
   position: absolute;
   top: 0;
@@ -13,8 +15,10 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  z-index: -1; /* Coloca el video detrás del contenido */
 }
 
+/* Gradiente superpuesto */
 .hero .gradient-overlay {
   position: absolute;
   bottom: 0;
@@ -25,45 +29,22 @@
   pointer-events: none;
 }
 
+/* Contenido del Hero */
 .hero .content {
   position: absolute;
-  top: 45%;
-  left: 4%;
-  transform: translateY(-50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
   color: white;
-  text-align: left;
   z-index: 1;
-  max-width: 500px;
-}
-
-.mute-button {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  font-size: 1.2rem;
-  border-radius: 50%;
-  width: 45px;
-  height: 45px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  z-index: 2;
-  transition: all 0.3s ease;
-}
-
-.mute-button:hover {
-  background: rgba(255, 255, 255, 0.5);
-  color: black;
-  transform: scale(1.1);
+  max-width: 80%;
 }
 
 .hero h1 {
-  font-size: 2rem;
-  margin-bottom: 10px;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
   font-weight: bold;
 }
 
@@ -77,14 +58,13 @@
 }
 
 .hero .button {
-  padding: 8px 16px;
+  padding: 10px 20px;
   background-color: #adaaa8;
   border: none;
   color: rgb(19, 18, 18);
-  font-size: 0.9rem;
+  font-size: 1rem;
   cursor: pointer;
   text-decoration: none;
-  display: inline-block;
   transition: box-shadow 0.3s ease;
 }
 
@@ -92,14 +72,19 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Responsividad */
 @media (max-width: 768px) {
+  .hero {
+    height: 50vh; /* Reduce el tamaño del Hero en móviles */
+  }
+
   .hero .content {
-    left: 3%;
-    max-width: 90%;
+    top: 60%; /* Ajusta la posición del texto */
+    transform: translate(-50%, -60%);
   }
 
   .hero h1 {
-    font-size: 1.8rem;
+    font-size: 1.8rem; /* Texto más pequeño */
   }
 
   .hero p {
@@ -108,6 +93,25 @@
 
   .hero .button {
     font-size: 0.8rem;
+    padding: 8px 16px;
+  }
+
+  .hero video {
+    height: auto; /* Permite que el video mantenga proporción en móviles */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.5rem; /* Reduce aún más el tamaño del texto */
+  }
+
+  .hero p {
+    font-size: 0.8rem;
+  }
+
+  .hero .button {
+    font-size: 0.7rem;
     padding: 6px 12px;
   }
 }
