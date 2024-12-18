@@ -25,7 +25,7 @@ const Avatar = () => {
       </p>
       
       <div class="additional-section">
-        <img src="public/ruedasmercedesAVTR.jpg" alt="Ruedas Mercedes AVTR" class="car-subimage"/>
+        <img src="../../assets/ruedasmercedesAVTR.jpg" alt="Ruedas Mercedes AVTR" class="car-subimage"/>
         
         <p class="car-subdescription">
           Las ruedas del Mercedes AVTR están inspiradas en la naturaleza. Diseñadas con un patrón biomimético,
@@ -34,7 +34,7 @@ const Avatar = () => {
       </div>
 
       <div class="additional-section">
-        <img src="public/asientosmercedesAVTR.jpg" alt="Interior Mercedes AVTR" class="car-subimage"/>
+        <img src="../../assets/asientosmercedesAVTR.jpg" alt="Interior Mercedes AVTR" class="car-subimage"/>
         
         <p class="car-subdescription">
           Los asientos están fabricados con materiales reciclados y cuentan con una ergonomía avanzada.
