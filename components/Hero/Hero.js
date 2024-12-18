@@ -14,7 +14,7 @@ const Hero = () => {
   heroContainer.innerHTML = `
     <section class="hero">
       <video id="hero-video" autoplay loop>
-        <source src="public/assets/Mercedes-Benz VISION AVTR.mp4" type="video/mp4">
+        <source src="../../assets/Mercedes-Benz VISION AVTR.mp4" type="video/mp4">
         Tu navegador no soporta el video.
       </video>
       <button id="mute-button" class="mute-button">🔊</button>
