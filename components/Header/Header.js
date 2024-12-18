@@ -6,7 +6,7 @@ const template = () => `
   <header class="header">
     <div class="header-content">
       <img 
-        src="https://static.vecteezy.com/system/resources/previews/020/500/024/non_2x/cupra-logo-brand-car-symbol-with-name-white-design-spanish-automobile-illustration-with-black-background-free-vector.jpg" 
+        src="public/mercedeslogo.jpg" 
         alt="Cupra Logo" 
         class="logo" 
       />

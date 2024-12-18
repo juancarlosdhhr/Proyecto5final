@@ -13,7 +13,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-
 }
 
 .hero .gradient-overlay {
@@ -23,7 +22,7 @@
   width: 100%;
   height: 30%;
   background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-  pointer-events: none; 
+  pointer-events: none;
 }
 
 .hero .content {
@@ -35,6 +34,31 @@
   text-align: left;
   z-index: 1;
   max-width: 500px;
+}
+
+.mute-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.mute-button:hover {
+  background: rgba(255, 255, 255, 0.5);
+  color: black;
+  transform: scale(1.1);
 }
 
 .hero h1 {
@@ -62,17 +86,11 @@
   text-decoration: none;
   display: inline-block;
   transition: box-shadow 0.3s ease;
-  
-  
 }
-
 
 .hero .button:hover {
- 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-
 
 @media (max-width: 768px) {
   .hero .content {
