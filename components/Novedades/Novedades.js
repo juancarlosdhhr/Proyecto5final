@@ -23,7 +23,7 @@ const Novedades = () => {
           <button id="btnSolaris">Ver detalles</button>
         </div>
         <div class="novedad-card">
-          <img src="public/Vortexnovedades.jpg" alt="Vortex" />
+          <img src="../../assets/Vortexnovedades.jpg" alt="Vortex" />
           <h3>Nuevo Mercedes Vortex</h3>
           <button id="btnVortex">Ver detalles</button>
         </div>
