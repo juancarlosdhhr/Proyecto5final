@@ -13,7 +13,7 @@ const Novedades = () => {
       <h2>NOVEDADES</h2>
       <div class="novedades-container">
         <div class="novedad-card">
-          <img src="public/Avatarnovedades.jpg" alt="Avatar" />
+          <img src="../../assets/Avatarnovedades.jpg" alt="Avatar" />
           <h3>Nuevo Mercedes Avatar</h3>
           <button id="btnAvatar">Ver detalles</button>
         </div>
