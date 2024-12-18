@@ -2,28 +2,30 @@ import './Slider.css';
 
 const template = () => `
   <section class="slider">
-    <h2>Modelos CUPRA</h2>
-    <div class="slider-container">
-      <div class="slider-card">
-        <img src="path_to_model_image1.jpg" alt="Formentor" class="slider-image" />
-        <h3>Formentor</h3>
-        <p>Híbrido enchufable, Híbrido, Gasolina, Diesel</p>
-        <p>Por 31.900€¹</p>
-        <button>Ver oferta</button>
-      </div>
-      <div class="slider-card">
-        <img src="path_to_model_image2.jpg" alt="Terramar" class="slider-image" />
-        <h3>Terramar</h3>
-        <p>Híbrido enchufable, Híbrido, Gasolina</p>
-        <p>Por 38.400€²</p>
-        <button>Ver oferta</button>
-      </div>
-      <div class="slider-card">
-        <img src="path_to_model_image3.jpg" alt="León" class="slider-image" />
-        <h3>León</h3>
-        <p>Híbrido enchufable, Híbrido, Gasolina</p>
-        <p>Por 28.990€³</p>
-        <button>Ver oferta</button>
+    <h2 class="slider-title">Ventajas de los coches eléctricos e híbridos </h2>
+    <div class="slider-wrapper">
+      <div class="slider-container">
+        <div class="slider-card">
+          <img src="public/slider1.jpg" alt="vista de pinos" class="slider-image" />
+          <div class="slider-text-right">
+            <h3>Energía más limpia</h3>
+            <p>Reduce tu huella de carbono.</p>
+          </div>
+        </div>
+        <div class="slider-card">
+          <img src="public/slider2.jpg" alt="Imagen aparcamientos" class="slider-image" />
+          <div class="slider-text-right">
+            <h3>Ahorra sobre la marcha</h3>
+            <p>Disfruta de descuentos en aparcamiento y peajes. Ahorra más gracias al Plan MOVES y a la deducción fiscal sobre el IRPF.</p>
+          </div>
+        </div>
+        <div class="slider-card">
+          <img src="public/slider3.jpg" alt="Imagen de taller mecanico" class="slider-image" />
+          <div class="slider-text-right">
+            <h3>Menor mantenimiento</h3>
+            <p>En comparación con los vehículos de combustión interna tradicionales, los vehículos eléctricos requieren menos mantenimiento.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
