@@ -10,7 +10,7 @@ const Avatar = () => {
   app.innerHTML = `
     <section class="avatar-details">
       <h1 class="car-title">Mercedes AVATAR</h1>
-      <img src="public/portadamercedesAVTR.jpg" alt="Mercedes AVTR" class="car-image"/>
+      <img src="public/assets/portadamercedesAVTR.jpg" alt="Mercedes AVTR" class="car-image"/>
       <p class="car-description">
         Inspirado en la película "Avatar", el Mercedes AVATAR combina tecnología avanzada con un diseño futurista.
         Este modelo eléctrico redefine la movilidad sostenible.
