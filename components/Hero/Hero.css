@@ -1,4 +1,3 @@
-/* Hero general */
 .hero {
   position: relative;
   height: calc(70vh - 60px);
@@ -7,7 +6,6 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Video */
 .hero video {
   position: absolute;
   top: 0;
@@ -15,10 +13,8 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1; /* Coloca el video detrás del contenido */
 }
 
-/* Gradiente superpuesto */
 .hero .gradient-overlay {
   position: absolute;
   bottom: 0;
@@ -29,22 +25,20 @@
   pointer-events: none;
 }
 
-/* Contenido del Hero */
 .hero .content {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  top: 45%;
+  left: 4%;
+  transform: translateY(-50%);
   color: white;
+  text-align: left;
   z-index: 1;
-  max-width: 80%;
+  max-width: 500px;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 10px;
   font-weight: bold;
 }
 
@@ -58,13 +52,14 @@
 }
 
 .hero .button {
-  padding: 10px 20px;
+  padding: 8px 16px;
   background-color: #adaaa8;
   border: none;
   color: rgb(19, 18, 18);
-  font-size: 1rem;
+  font-size: 0.9rem;
   cursor: pointer;
   text-decoration: none;
+  display: inline-block;
   transition: box-shadow 0.3s ease;
 }
 
@@ -72,19 +67,14 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsividad */
 @media (max-width: 768px) {
-  .hero {
-    height: 50vh; /* Reduce el tamaño del Hero en móviles */
-  }
-
   .hero .content {
-    top: 60%; /* Ajusta la posición del texto */
-    transform: translate(-50%, -60%);
+    left: 3%;
+    max-width: 90%;
   }
 
   .hero h1 {
-    font-size: 1.8rem; /* Texto más pequeño */
+    font-size: 1.8rem;
   }
 
   .hero p {
@@ -93,25 +83,6 @@
 
   .hero .button {
     font-size: 0.8rem;
-    padding: 8px 16px;
-  }
-
-  .hero video {
-    height: auto; /* Permite que el video mantenga proporción en móviles */
-  }
-}
-
-@media (max-width: 480px) {
-  .hero h1 {
-    font-size: 1.5rem; /* Reduce aún más el tamaño del texto */
-  }
-
-  .hero p {
-    font-size: 0.8rem;
-  }
-
-  .hero .button {
-    font-size: 0.7rem;
     padding: 6px 12px;
   }
 }
