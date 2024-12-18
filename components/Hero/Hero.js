@@ -3,9 +3,10 @@ import './Hero.css';
 
 const Hero = () => {
   const heroContainer = document.getElementById('hero-container');
+
   heroContainer.innerHTML = `
     <section class="hero">
-      <video id="hero-video" autoplay loop>
+      <video id="hero-video" autoplay loop playsinline>
         <source src="../../assets/Mercedes-Benz VISION AVTR.mp4" type="video/mp4">
         Tu navegador no soporta el video.
       </video>
@@ -23,14 +24,16 @@ const Hero = () => {
   const video = document.getElementById('hero-video');
   const muteButton = document.getElementById('mute-button');
 
-  // Intentar reproducir con sonido
+  // Por defecto el video no está silenciado
   video.muted = false;
+
+  // Manejar errores de reproducción automática
   video.play().catch(() => {
     video.muted = true;
     muteButton.textContent = '🔇';
   });
 
-  // Botón mute/unmute
+  // Toggle de sonido
   muteButton.addEventListener('click', () => {
     video.muted = !video.muted;
     muteButton.textContent = video.muted ? '🔇' : '🔊';
