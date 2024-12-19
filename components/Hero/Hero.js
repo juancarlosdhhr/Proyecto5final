@@ -30,7 +30,24 @@ const Hero = () => {
   `;
 
   const video = document.getElementById('hero-video');
+  const muteButton = document.getElementById('mute-button');
+
+ 
+  console.log('Botón de mute encontrado:', muteButton);
+  console.log('Video encontrado:', video);
+
   
+  video.muted = false;
+  video.play().catch(() => {
+    video.muted = true;
+    muteButton.textContent = '🔇';
+  });
+
+  
+  muteButton.addEventListener('click', () => {
+    video.muted = !video.muted;
+    muteButton.textContent = video.muted ? '🔇' : '🔊';
+  });
 };
 
 export default Hero;
