@@ -78,7 +78,7 @@
 
 .car-subimage:hover {
   transform: scale(1.03);
-  box-shadow: 0 8px 16px rgba(255, 69, 0, 0.5);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.5);
 }
 
 .car-subdescription {
