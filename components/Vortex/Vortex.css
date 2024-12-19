@@ -8,23 +8,13 @@
 }
 
 
-.car-title {
-  font-size: 3rem;
-  margin-bottom: 40px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  text-align: center;
-  color: #ff4500; 
-}
-
-
 .car-image {
   width: 100%;
   max-width: 700px;
   margin: 0 auto 30px;
   display: block;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  
 }
 
 
@@ -72,13 +62,17 @@
   flex: 1;
   max-width: 50%;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(216, 213, 211, 0.3);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.5);
+
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .car-subimage:hover {
   transform: scale(1.03);
   box-shadow: 0 8px 16px rgba(255, 255, 255, 0.5);
+
+
+
 }
 
 .car-subdescription {

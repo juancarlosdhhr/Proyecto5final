@@ -1,7 +1,13 @@
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .hero {
   position: relative;
-  height: 100vh; /* Asegura que el Hero ocupe toda la pantalla */
+  height: calc(70vh - 60px);
   background-color: black;
   overflow: hidden;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -27,12 +33,14 @@
 }
 
 .hero .content {
-  position: relative;
-  z-index: 1; /* Asegura que el contenido esté por encima del video */
-  max-width: 500px;
-  padding: 30px 20px; /* Espaciado adicional alrededor del contenido */
+  position: absolute;
   text-align: center;
-  margin-top: 80vh; /* Asegura que el contenido quede debajo del video */
+  top: 45%;
+  left: 4%;
+  transform: translateY(-50%);
+  color: white;
+  z-index: 1;
+  max-width: 500px;
 }
 
 .hero h1 {
@@ -66,16 +74,32 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Ajustes en la vista móvil */
 @media (max-width: 768px) {
-  /* Hacer que el Hero ocupe toda la pantalla */
+  /* Ajustamos el contenedor de la sección Hero */
   .hero {
-    height: 80vh; /* Ajustamos la altura en pantallas móviles */
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
+  /* Aseguramos que el video se posicione debajo del contenido en pantallas pequeñas */
+  .hero video {
+    position: relative;
+    top: auto; /* Elimina cualquier desplazamiento de la parte superior */
+    height: 50vh; /* Ajusta la altura del video a la mitad de la pantalla */
+    width: 100%;
+    object-fit: cover; /* Mantiene la proporción del video */
+  }
+
+  /* Ajustamos la posición del contenido para que esté en la parte superior */
   .hero .content {
-    margin-top: 55vh; /* Más espacio entre el video y el contenido */
-    padding: 20px; /* Menos padding en móviles */
+    position: relative; /* Hace que el contenido se quede arriba */
+    top: auto; /* Elimina cualquier desplazamiento */
+    z-index: 1;
+    max-width: 100%;
+    padding: 20px;
+    text-align: center;
   }
 
   .hero h1 {
