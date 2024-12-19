@@ -83,17 +83,19 @@
   }
 
   .hero .content {
-    position: relative;
+   position: absolute;
     top: auto;
     margin-top: 25vh;
     z-index: 1;
     max-width: 100%;
     padding: 20px;
     text-align: center;
+    
   }
 
   .hero h1 {
     font-size: 1.6rem;
+    
   }
 
   .hero p {
