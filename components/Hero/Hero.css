@@ -1,13 +1,7 @@
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .hero {
   position: relative;
-  height: calc(70vh - 60px);
+  height: calc(70vh - 60px); /* Ajustamos la altura para que el Hero no ocupe toda la pantalla */
   background-color: black;
   overflow: hidden;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -35,12 +29,13 @@
 .hero .content {
   position: absolute;
   text-align: center;
-  top: 45%;
+  top: 20%; /* Ajustamos el contenido para que no esté pegado al video */
   left: 4%;
   transform: translateY(-50%);
   color: white;
   z-index: 1;
   max-width: 500px;
+  padding: 10px;
 }
 
 .hero h1 {
@@ -74,31 +69,26 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Ajustes en la vista móvil */
 @media (max-width: 768px) {
-  /* Ajustamos el contenedor de la sección Hero */
   .hero {
-    height: 100vh; /* Ocupa toda la altura de la pantalla */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    height: 60vh; /* Reducción de la altura del Hero para pantallas pequeñas */
   }
 
-  /* Aseguramos que el video se posicione debajo del contenido en pantallas pequeñas */
+  /* Aseguramos que el video se posicione correctamente en pantallas pequeñas */
   .hero video {
     position: relative;
-    top: auto; /* Elimina cualquier desplazamiento de la parte superior */
-    height: 50vh; /* Ajusta la altura del video a la mitad de la pantalla */
-    width: 100%;
-    object-fit: cover; /* Mantiene la proporción del video */
+    top: auto;
+    height: 50vh;
+    object-fit: cover;
   }
 
-  /* Ajustamos la posición del contenido para que esté en la parte superior */
   .hero .content {
-    position: relative; /* Hace que el contenido se quede arriba */
-    top: auto; /* Elimina cualquier desplazamiento */
-    z-index: 1;
-    max-width: 100%;
-    padding: 20px;
+    position: relative;
+    top: 15%; /* Ajustamos el contenido para que no quede tan pegado al video */
+    font-size: 1.2rem;
+    left: 5%;
+    transform: translateY(-50%);
     text-align: center;
   }
 
