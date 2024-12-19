@@ -60,7 +60,7 @@ body {
   aspect-ratio: 16 / 9; 
   border-radius: 10px;
   object-fit: cover; 
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 8px rgba(20, 185, 207, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
