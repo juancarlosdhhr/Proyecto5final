@@ -32,18 +32,18 @@ const Hero = () => {
   const video = document.getElementById('hero-video');
   const muteButton = document.getElementById('mute-button');
 
-  // Verificar si el botón y el video están cargados
+ 
   console.log('Botón de mute encontrado:', muteButton);
   console.log('Video encontrado:', video);
 
-  // Reproducir video con sonido y manejar errores
+  
   video.muted = false;
   video.play().catch(() => {
     video.muted = true;
     muteButton.textContent = '🔇';
   });
 
-  // Función de mute/desmute
+  
   muteButton.addEventListener('click', () => {
     video.muted = !video.muted;
     muteButton.textContent = video.muted ? '🔇' : '🔊';

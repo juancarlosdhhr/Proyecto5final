@@ -1,28 +1,28 @@
 
 
 
-/* Reinicio de estilos */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Header principal */
+
 .header {
   background-color: black;
   width: 100%;
-  height: 10vh; /* Altura proporcional al tamaño de la pantalla */
+  height: 10vh; 
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 2vw; /* Margen lateral relativo */
+  padding: 0 2vw; 
   position: fixed;
   top: 0;
   z-index: 10;
 }
 
-/* Contenedor dentro del header */
+
 .header-content {
   display: flex;
   justify-content: space-between;
@@ -30,22 +30,22 @@
   width: 100%;
 }
 
-/* Logo */
+
 .logo {
-  max-height: 8vh; /* Altura máxima proporcional al header */
-  max-width: 15vw; /* Ancho máximo proporcional */
-  object-fit: contain; /* Mantener proporción del logo */
+  max-height: 8vh; 
+  max-width: 15vw; 
+  object-fit: contain; 
   cursor:pointer;
 }
 
-/* Botonera */
+
 .nav-buttons {
   display: flex;
   gap: 2vw; 
   align-items: center;
 }
 
-/* Botones */
+
 .nav-button {
   background: none;
   border: none;
@@ -67,7 +67,7 @@
 
 
 
-/* Responsividad para pantallas más pequeñas */
+
 @media (max-width: 768px) {
   .header {
     height: 12vh;

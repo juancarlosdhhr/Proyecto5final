@@ -3,7 +3,7 @@ import './Condiciones.css';
 const Condiciones = () => {
   const app = document.getElementById('app');
   app.innerHTML += `  
-    <section class="condiciones" id="condiciones"> <!-- Asegúrate de agregar el id aquí -->
+    <section class="condiciones" id="condiciones"> 
       <h2>CONDICIONES LEGALES DE LA OFERTA</h2>
       <div class="condiciones-section">
         <p>1. MERCEDES AVATAR</p>

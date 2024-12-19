@@ -1,4 +1,4 @@
-/* Estilos para el componente Novedades */
+
 * {
   margin: 0;
   padding: 0;
@@ -8,12 +8,12 @@
 }
 
 .novedades {
-  background-color: #1c1c1c; /* Fondo gris oscuro */
+  background-color: #1c1c1c; 
   color: white;
   padding: 3rem 0;
   text-align: center;
   width: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), #333; /* Gradiente difuminado */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), #333; 
 }
 
 .novedades h2 {
@@ -45,7 +45,7 @@
   height: 250px;
   object-fit: cover;
   transition: transform 0.3s ease;
-  background: linear-gradient(to top, rgb(29, 29, 29), rgba(0, 0, 0, 1)), #333; /* Gradiente difuminado */
+  background: linear-gradient(to top, rgb(29, 29, 29), rgba(0, 0, 0, 1)), #333; 
 
 }
 
@@ -59,9 +59,9 @@
   padding: 0 1rem 1rem;
 }
 
-/* Efecto hover para expandir la imagen */
+
 .novedad-card:hover img {
-  transform: scale(1.1); /* Expande la imagen al pasar el ratón */
+  transform: scale(1.1); 
 }
 
 .novedades .gradient-hero {
@@ -70,12 +70,12 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 40%; /* Ajusta el porcentaje para decidir la altura del difuminado */
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); /* Difuminado desde arriba */
+  height: 40%; 
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); 
   pointer-events: none;
 }
 
-/* Botón Ver detalles */
+
 .novedad-card button {
   background: transparent;
   color: white;
@@ -93,7 +93,7 @@
   z-index: 1;
 }
 
-/* Efecto hover */
+
 .novedad-card button::before {
   content: '';
   position: absolute;
@@ -101,25 +101,25 @@
   left: 0;
   width: 0;
   height: 100%;
-  background: white; /* Color de relleno al pasar el ratón */
+  background: white; 
   z-index: -1;
   transition: width 0.4s ease-in-out;
 }
 
 .novedad-card button:hover::before {
-  width: 100%; /* Rellena todo el botón */
+  width: 100%; 
 }
 
 .novedad-card button:hover {
-  color: black; /* Texto cambia a negro */
+  color: black; 
   border-color: white;
-  transform: scale(1.05); /* Ligero efecto de crecimiento */
+  transform: scale(1.05); 
 }
 
 
 
 
-/* Responsividad */
+
 @media (max-width: 768px) {
   .novedades-container {
     flex-direction: column;

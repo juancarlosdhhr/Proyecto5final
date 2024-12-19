@@ -4,8 +4,8 @@ import './Solaris.css';
 
 const Solaris = () => {
   const app = document.getElementById('app');
-  cleanPage(app); // Limpia el contenido dinámico
-  toggleHero(false); // Ocultar el Hero
+  cleanPage(app); 
+  toggleHero(false); 
 
   app.innerHTML = `
     <section class="solaris-details">

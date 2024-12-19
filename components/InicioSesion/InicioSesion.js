@@ -20,11 +20,11 @@ const InicioSesion = () => {
     </section>
   `;
 
-  // Acción para enviar el formulario (simple ejemplo)
+  
   document.getElementById('loginForm').addEventListener('submit', (e) => {
     e.preventDefault();
     alert('Iniciando sesión...');
-    // Aquí puedes añadir la lógica de autenticación
+    
   });
 };
 

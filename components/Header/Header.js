@@ -27,12 +27,12 @@ const template = () => `
 const Header = () => {
   document.querySelector('header').innerHTML = template();
 
-  // Agregar el evento al logo para recargar la página
+  
   document.getElementById('logo').addEventListener('click', () => {
     location.reload(); // Recarga la página actual
     setTimeout(() => {
       document.querySelector('header').scrollIntoView({ behavior: 'smooth' });
-    }, 100); // Pequeño retraso para esperar la recarga
+    }, 100); 
   });
 };
 

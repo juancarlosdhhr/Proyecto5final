@@ -4,8 +4,8 @@ import './Vortex.css';
 
 const Vortex = () => {
   const app = document.getElementById('app');
-  cleanPage(app); // Limpia el contenido dinámico
-  toggleHero(false); // Ocultar el Hero
+  cleanPage(app); 
+  toggleHero(false); 
 
   app.innerHTML = `
     <section class="vortex-details">
