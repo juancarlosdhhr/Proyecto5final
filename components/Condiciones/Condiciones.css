@@ -1,32 +1,70 @@
-/* Condiciones.css */
-
+/* Estilos para el componente Condiciones */
 .condiciones {
-    padding: 20px 400px; /* Añadir padding de 40px a la izquierda y derecha */
-    background-color: #f4f4f4;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
   }
   
-  .condiciones ol {
-    padding-left: 0; /* Eliminar el padding izquierdo en la lista */
-    list-style-position: inside; /* Asegura que los números de la lista estén dentro del contenedor */
+  .condiciones h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #00c3ff;
   }
   
-  .condiciones li {
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #ddd;
+  .condiciones-section {
+    margin-bottom: 30px;
   }
   
-  .condiciones h3 {
-    font-size: 1em;
-    color: #444;
+  .condiciones-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ff4500;
   }
   
-  .condiciones p {
-    font-size: 1em;
+  .condiciones-section p {
+    font-size: 1rem;
     line-height: 1.6;
-    color: #555;
-    margin-top: 10px;
-    text-align: justify; /* Justificar el texto */
+    color: #e0e0e0;
+    text-align: justify;
+  }
+  
+  .back-button {
+    display: block;
+    margin: 40px auto;
+    background-color: #00c3ff;
+    color: #121212;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #00a0cc;
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    .condiciones {
+      padding: 20px 10px;
+    }
+  
+    .condiciones h2 {
+      font-size: 2rem;
+    }
+  
+    .condiciones-section p {
+      font-size: 0.9rem;
+    }
+  
+    .back-button {
+      font-size: 0.9rem;
+    }
   }
   

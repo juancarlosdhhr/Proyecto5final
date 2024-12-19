@@ -9,6 +9,7 @@ import Novedades from './components/Novedades/Novedades.js';
 import Avatar from './components/Avatar/Avatar.js';
 import Vortex from './components/Vortex/Vortex.js';
 import Solaris from './components/Solaris/Solaris.js';
+import Condiciones from './components/Condiciones/Condiciones.js';  // Importación de Condiciones
 
 import { cleanPage } from './utils/cleanPage.js';
 import { linkPage } from './utils/linkPage.js';
@@ -28,6 +29,9 @@ const renderHome = () => {
   // Renderiza secciones principales
   Novedades();
   Slider();
+
+  // Mostrar directamente las Condiciones
+  Condiciones();  // Añadir directamente la sección de condiciones
 
   // Asignar eventos a los botones "Ver detalles"
   linkPage("#btnAvatar", () => {
