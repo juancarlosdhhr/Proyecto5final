@@ -98,7 +98,7 @@
   color: #e0e0e0;
 }
 
-/* Responsividad */
+
 @media (max-width: 768px) {
   .slider-title {
     font-size: 2rem;

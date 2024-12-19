@@ -1,10 +1,10 @@
 
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  
 }
 
 .novedades {
@@ -13,7 +13,9 @@
   padding: 3rem 0;
   text-align: center;
   width: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), #333; 
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); 
+  position: relative; 
+  margin: 0; 
 }
 
 .novedades h2 {
@@ -27,17 +29,12 @@
   display: flex;
   justify-content: center;
   gap: 2rem;
-  
-
-  
 }
 
 .novedad-card {
   overflow: hidden;
-  
   width: 350px;
   transition: transform 0.4s ease;
- 
 }
 
 .novedad-card img {
@@ -45,8 +42,7 @@
   height: 250px;
   object-fit: cover;
   transition: transform 0.3s ease;
-  background: linear-gradient(to top, rgb(29, 29, 29), rgba(0, 0, 0, 1)), #333; 
-
+  background: linear-gradient(to top, rgb(29, 29, 29), rgba(0, 0, 0, 1)); 
 }
 
 .novedad-card h3 {
@@ -59,7 +55,6 @@
   padding: 0 1rem 1rem;
 }
 
-
 .novedad-card:hover img {
   transform: scale(1.1); 
 }
@@ -71,10 +66,9 @@
   left: 0;
   width: 100%;
   height: 40%; 
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); 
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));  
   pointer-events: none;
 }
-
 
 .novedad-card button {
   background: transparent;
@@ -93,7 +87,6 @@
   z-index: 1;
 }
 
-
 .novedad-card button::before {
   content: '';
   position: absolute;
@@ -107,7 +100,7 @@
 }
 
 .novedad-card button:hover::before {
-  width: 100%; 
+  width: 100%;
 }
 
 .novedad-card button:hover {
@@ -116,16 +109,12 @@
   transform: scale(1.05); 
 }
 
-
-
-
-
 @media (max-width: 768px) {
   .novedades-container {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .novedad-card {
     width: 80%;
     margin-bottom: 1.5rem;

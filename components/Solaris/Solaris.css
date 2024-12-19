@@ -109,7 +109,7 @@
   transform: scale(1.05);
 }
 
-/* Responsividad */
+
 @media (max-width: 768px) {
   .additional-section {
     flex-direction: column !important; 
