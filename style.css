@@ -1,6 +1,165 @@
+/* Reiniciar márgenes y padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: url('public/cuprapointer (3).png') 16 16, auto; /* Coordenadas ajustadas */
-}
+  }
+  
+  /* Hacer que el body ocupe todo el alto de la pantalla */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212; /* Fondo oscuro */
+    color: #ffffff;
+    min-height: 100vh; /* Ocupa toda la altura de la ventana */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Asegurarse de que el contenido no se desborde */
+  #app {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Hace que el contenido ocupe el espacio disponible */
+  }
+  
+  /* Header */
+  header {
+    background-color: #121212;
+    padding: 1rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #121212;
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    margin-top: auto; /* Empuja el footer hacia abajo */
+  }
+  
+  /* Estilo para los enlaces del footer */
+  footer .footer-link {
+    color: #00c3ff;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: color 0.3s;
+  }
+  
+  footer .footer-link:hover {
+    color: #ffffff;
+  }
+  
+  /* Estilo general de los botones */
+  button {
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Estilo general de las imágenes */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+  }
+  
+  /* Estilos de los enlaces dentro del header */
+  header .nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .nav-button {
+    background: none;
+    
+    color: whitesmoke;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  header .nav-button:hover {
+    background-color: #00c3ff;
+    color: #121212;
+  }
+  
+  /* Secciones principales */
+  section {
+    margin-top: 80px; /* Para no solaparse con el header fijo */
+    padding: 2rem;
+    width: 100%;
+  }
+  
+ /* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    body {
+      font-size: 0.9rem;
+    }
+  
+    header .nav-buttons {
+      flex-direction: row; /* Aseguramos que los botones estén en fila */
+       /* Distribuye los botones con espacio entre ellos */
+      
+    }
+  
+    header .nav-button {
+      margin: 0 5px; /* Añadimos un pequeño espacio entre los botones */
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+    }
+  
+    section {
+      padding: 1rem;
+    }
+  
+    footer {
+      padding: 1rem;
+    }
+  
+    /* Títulos más pequeños */
+    h1, h2, h3 {
+      font-size: 1.5rem;
+    }
+  
+    /* Hacer las imágenes más pequeñas */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  /* Responsividad para pantallas muy pequeñas (smartphones) */
+  @media (max-width: 480px) {
+    header .nav-button {
+      font-size: 0.8rem;
+      padding: 0.4rem 0.8rem;
+    }
+  
+    /* Reducir el tamaño de los textos y márgenes */
+    body {
+      font-size: 0.8rem;
+    }
+  
+    h1, h2, h3 {
+      font-size: 1.2rem;
+    }
+  
+    section {
+      padding: 1rem;
+    }
+  }
+  

@@ -3,11 +3,11 @@ import './Footer.css';
 const template = () => `
   <footer class="footer">
     <div class="footer-content">
-     
       <div class="footer-links">
-        <a href="#about" class="footer-link">Sobre Mercedes</a>
-        <a href="#contact" class="footer-link">Contacto</a>
-        <a href="#privacy" class="footer-link">Política de Privacidad</a>
+      
+        <a href="https://www.mercedes-benz.es/passengercars/brand.html" target="_blank" class="footer-link">Sobre Mercedes</a>
+        <a href="https://www.mercedes-benz.es/passengercars/services/support-contact.html" target="_blank" class="footer-link">Contacto</a>
+        <a href="https://www.mercedes-benz.es/passengercars/content-pool/tool-pages/legal/privacy-statement.html" target="_blank" class="footer-link">Política de Privacidad</a>
       </div>
       <div class="footer-bottom">
         <p>&copy; 2024 - Mercedes-Benz. Todos los derechos reservados.</p>

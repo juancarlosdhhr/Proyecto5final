@@ -6,13 +6,15 @@
     padding: 40px 20px;
     max-width: 1200px;
     margin: 0 auto;
+   
   }
   
   .condiciones h2 {
     font-size: 2.5rem;
     margin-bottom: 40px;
     text-align: center;
-    color: #00c3ff;
+    color: whitesmoke;
+    font-weight: 100;
   }
   
   .condiciones-section {
@@ -32,23 +34,9 @@
     text-align: justify;
   }
   
-  .back-button {
-    display: block;
-    margin: 40px auto;
-    background-color: #00c3ff;
-    color: #121212;
-    border: none;
-    padding: 12px 24px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
+ 
   
-  .back-button:hover {
-    background-color: #00a0cc;
-    transform: scale(1.05);
-  }
+
   
   @media (max-width: 768px) {
     .condiciones {

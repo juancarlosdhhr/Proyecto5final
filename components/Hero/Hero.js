@@ -23,7 +23,8 @@ const Hero = () => {
         <h1>NUEVO MERCEDES AVATAR DESDE 99.900€¹</h1>
         <p>Movimiento inteligente, belleza extraordinaria</p>
         <p class="small-text">*Sujeto a financiación.</p>
-        <a href="#novedades" class="button">Ver oferta</a>
+        <!-- Cambié el href para ir a la sección Condiciones -->
+        <a href="#condiciones" class="button">Ver oferta</a> 
       </div>
     </section>
   `;
